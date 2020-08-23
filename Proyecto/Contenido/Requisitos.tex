@@ -1,0 +1,68 @@
+\section{Requisitos}
+  
+  \subimport{Requisitos/}{Código base.tex}
+
+  \subimport{./Requisitos/}{Distancias.tex}
+  \subimport{./Requisitos/}{State.tex}
+  \subimport{./Requisitos/}{GUI.tex}
+
+  \subsection{Bonificaciones}
+    Además del puntaje asignado por cumplir con los requisitos anteriores, puede recibir 
+    puntos adicionales (\emph{que se sumarán a su nota total}) implementando lo siguiente:
+    \begin{itemize}
+      \item \textbf{Interfaz gráfica avanzada} (0.5 pts): Si su interfaz gráfica cumple 
+        más de los requisitos mínimos podrá recibir una bonificación de hasta 0.5 pts 
+        (esto quedará a criterio del ayudante que le revise).
+      \item \textbf{Manejo de excepciones} (0.3 pts): Se otorgará puntaje por la correcta 
+        utilización de excepciones para manejar casos de borde en el juego.
+        Recuerde que atrapar \textit{runtime exceptions} es una mala práctica, así como
+        arrojar un error de tipo \java{Exception} (esto último ya que no es un error lo 
+        suficientemente descriptivo).
+        Bajo ninguna circunstancia una de estas excepciones debiera llegar al usuario.
+      \item \textbf{\textit{Benchmarking}} (0.3 pts): Cree \textit{tests} que muestren que 
+        su implementación del cálculo de distancias efectivamente mejora la eficiencia del
+        programa considerando la implementación original del algoritmo y las 2 
+        optimizaciones presentadas en este documento además de la que usted implementó.
+        Agregue al \textit{readme} los resultados de dichos \textit{tests}.
+    \end{itemize}
+  %
+  
+  \subsection{Requerimientos adicionales}
+    Además de una implementación basada en las buenas prácticas y técnicas de diseño 
+    vistas en clases, usted debe considerar:
+    \begin{itemize}
+      \item \textbf{Cobertura:} Cree los \textit{tests} unitarios, usando JUnit 5, que sean 
+        necesarios para tener al menos un coverage del 90 \% de las líneas por 
+        paquete.
+        Para esta entrega no debe testear las interfaces gráficas dado que no posee las 
+        herramientas necesarias para eso, así que debe asegurarse de que las interfaces 
+        gráficas estén en su propio paquete.
+        El porcentaje de coverage se medirá respecto al resto de los paquetes.
+        Todos los \textit{tests} de su proyecto deben estar en el paquete \java{test}.
+      \item \textbf{Javadoc:} Cada interfaz, clase pública y método público deben 
+        estar debidamente documentados siguiendo las convenciones de 
+        Javadoc\footnotemark. 
+        En particular necesita \java{@author} y una pequeña descripción para su 
+        clase e interfaz, y \java{@param}, \java{@return} (si aplica) y una 
+        descripción para los métodos.
+        \footnotetext{
+          {\url{http://www.oracle.com/technetwork/articles/java/index-137868.html}}
+        }
+      \item \textbf{Resumen:} Debe entregar un archivo \textbf{pdf} que contenga su 
+        nombre, rut, usuario de Github, un link al repositorio de su tarea y un 
+        diagrama UML que muestre las clases, interfaces y métodos que usted 
+        definió en su proyecto. 
+        \textbf{No debe incluir los tests} en su diagrama.
+      \item \textbf{Git:} Debe hacer uso de git para el versionamiento de su 
+        proyecto. 
+        Luego, esta historia de versionamiento debe ser subida a Github.
+      \item \textbf{Readme:} Debe hacer un \textit{readme} especificando los detalles de
+        su implementación, los supuestos que realice y una breve explicación de cómo 
+        ejecutar el programa.
+        Adicionalmente se le solicita dar una explicación general de la estructura que 
+        decidió utilizar, los patrones de diseño y la razón por la cual los utiliza.
+    \end{itemize}
+
+    Además debe considerar los requisitos que se especifican en el resumen del proyecto.
+  %
+%

@@ -1,0 +1,175 @@
+\section{Evaluación}
+  \subsection{Bonificaciones}
+    Además del puntaje asignado por cumplir con los requisitos anteriores, puede recibir 
+    puntos adicionales (\emph{que se sumarán a su nota total}) implementando lo siguiente:
+    
+    \begin{itemize}
+      \item \textbf{Mini-tareas} (0.4 pts.): De acuerdo a las entregas que haya hecho de las 
+        mini-tareas puede recibir una bonificación de hasta 0.4 pts.
+        Entregue las mini-tareas solamente si considera que están completas o altamente completas.
+        Entregar mini-tareas demasiado incompletas puede significar un descuento en el puntaje.
+        Para los casos de mini-tareas que estén completas pero contengan errores pueden optar a una
+        fracción del puntaje.
+      %
+      \item \textbf{Exclusivamente para la tarea 3:}
+      
+      \begin{itemize}
+        %
+        \item \textbf{Interfaz gráfica avanzada} (0.5 pts.): Si su interfaz gráfica cumple 
+          más de los requisitos mínimos podrá recibir una bonificación de hasta 0.5 pts. 
+          (esto quedará a criterio del ayudante que le revise).
+        %
+        \item \textbf{Manejo de excepciones} (0.3 pts.): Se otorgará puntaje por la correcta 
+          utilización de excepciones para manejar casos de borde en el juego.
+          Recuerde que atrapar \textit{runtime exceptions} es una mala práctica, así como
+          arrojar un error de tipo \java{Exception} (esto último ya que no es un error lo 
+          suficientemente descriptivo).
+          Bajo ninguna circunstancia una de estas excepciones debiera llegar al usuario.
+      \end{itemize}
+      %
+    \end{itemize}
+  %
+  \subsection{Requisitos adicionales}
+    Que su programa funcione no es suficiente, se espera además que éste presente un buen 
+    diseño, siendo esta la característica a la que se le dará \textbf{mayor importancia} 
+    en la revisión de sus entregas.
+
+    Sus programas además deberán estar bien testeados, por lo que \textbf{NO SE REVISARÁN}
+    las funcionalidades que no tengan un test correspondiente que pruebe su correcto 
+    funcionamiento.
+    Para revisar esto, también es de suma importancia que el trabajo que entregue pueda 
+    ejecutarse (que su código compile), en caso contrario no podrá revisarse la 
+    funcionalidad y por ende no tendrá puntaje en este aspecto.
+
+    Otro aspecto que se tendrá en cuenta al momento de revisar sus tareas es que estas 
+    estén bien documentadas, siguiendo los estándares de documentación para 
+    \textit{Java} de \textit{Google}.\footnote{
+      \url{https://github.com/CC3002-Metodologias/apunte-y-ejercicios/wiki/Convenciones}
+    }
+
+    Todo su trabajo debe ser subido al repositorio privado que se le entregó a través de 
+    \textit{Github Classroom}.
+    La modalidad de entrega será mediante un resumen en \textbf{formato PDF} entregado 
+    mediante \textit{u-cursos} que contenga su nombre, \textit{rut}, un diagrama de clases de su 
+    programa y un enlace a su repositorio (no se aceptará código recibido por este 
+    medio).\footnote{No cumplir con estas condiciones implicará descuento de puntaje.}
+    Además su repositorio deberá contener un archivo \texttt{README.md}\footnotemark que 
+    contenga todas las instrucciones necesarias para ejecutar su programa, todos los 
+    supuestos que realice y una breve explicación del funcionamiento y la lógica de su 
+    programa.
+    \footnotetext{
+      \url{https://help.github.com/en/articles/basic-writing-and-formatting-syntax}
+    }
+
+    Para la tarea deberá crear su propia rama para trabajar y subir todo su código en esta y, cuando
+    tenga una entrega lista para ser revisada, realizar un \textbf{\textit{pull request}}\footnote{
+      \url{
+        https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request
+      }
+    }, esta será la versión que será revisada.
+    Tenga en cuenta que si hace \textit{push} de otros \textit{commits} en esa rama se actualizará 
+    el \textit{PR}, por lo que se le recomienda crear una nueva rama para seguir trabajando.    
+  %
+
+  \subsection{Plazos de entrega}
+    No se aceptarán peticiones de extensión de plazo, pero dispondrá de 72 horas a lo largo
+    del semestre para entregar tareas atrasadas sin que se aplique descuento.
+    Esto significa que si la entrega de la primera tarea se hace con 72 horas de atraso, 
+    entonces las siguientes tendrán que entregarse sin atraso.
+    No es necesario dar aviso al cuerpo docente para usar las horas, simplemente se 
+    revisará el \textit{commit} correspondiente a la entrega de acuerdo a su \textit{Pull request}.
+    
+    Las horas de atraso serán aproximadas: para esto, se considerará cada media 
+    hora de atraso como 1 hora, y menos que eso como 0 horas, exceptuando la primera hora.
+    Entonces, si se entrega la tarea con 1 minuto de atraso, cuenta como 1 hora de atraso;
+    si se entrega con 1 hora y 1 minuto, también contará como 1 hora; si se entrega con 
+    1:30 de atraso se contará como 2 horas, y así.
+
+    La entrega de las mini-tareas se hará también mediante \textit{u-cursos}, para esto basta 
+    entregar un documento de texto plano con su nombre, \textit{rut}, y un enlace al 
+    \textit{Pull request} que cuente como entrega. 
+  %
+  \subsection{Evaluación}
+    \begin{itemize}
+      \item \textbf{Código fuente (4.0 puntos):} Este ítem se divide en 2:
+        \begin{itemize}
+          \item \textbf{Funcionalidad (1.5 puntos):} Se analizará que su código provea la 
+            funcionalidad pedida.
+            Para esto, se exigirá que testee las funcionalidades que 
+            implementó\footnotemark.
+            \textbf{Si una funcionalidad no se testea, no se podrá comprobar 
+            que funciona y, por lo tanto, NO SE ASIGNARÁ PUNTAJE por ella.}
+          \item \textbf{Diseño (2.5 puntos):} Se analizará que su código provea la 
+            funcionalidad implementada utilizando un buen diseño.
+        \end{itemize}
+        \footnotetext{
+          Se le recomienda enfáticamente que piense en cuales son los casos de borde de su
+          implementación y en las fallas de las que podría aprovecharse un usuario
+          malicioso.
+        }
+      \item \textbf{\textit{Coverage} (1.0 puntos):} Sus casos de prueba deben crear 
+        diversos escenarios y contar con un \textit{coverage} de las líneas de al menos 
+        90\% por paquete. 
+        No está de más decir que sus tests deben testear algo (es decir, no ser 
+        tests vacíos o sin \textit{asserts}).
+      \item \textbf{\textit{Javadoc} (0.5 puntos):} Cada clase, interfaz y método público 
+        debe ser debidamente documentado. 
+        Se descontará por cada falta.
+      \item \textbf{Resumen (0.5 puntos):} El resumen mencionado en la sección 
+        anterior. 
+        Se evaluará que haya incluido el diagrama UML de su proyecto. 
+        \textbf{En caso de no enviarse el resumen con el link a su repositorio su 
+        tarea no será corregida}.\footnote{Porque no tenemos su código.}
+    \end{itemize}
+  %
+  \subsection{Recomendaciones}
+    Como se mencionó anteriormente, no es suficiente que su tarea funcione correctamente. 
+    Este curso contempla el diseño de su solución y la aplicación de buenas prácticas 
+    de programación que ha aprendido en el curso. 
+    Dicho esto, no se conforme con el primer diseño que se le venga a la mente, intente 
+    ver si puede mejorarlo y hacerlo más extensible.
+
+    \textbf{No comience su tarea a último momento}. 
+    Esto es lo que se dice en todos los cursos, pero es particularmente importante/cierto 
+    en este. 
+    Si usted hace la tarea a último minuto lo más seguro es que no tenga tiempo para 
+    reflexionar sobre su diseño, y termine entregando un diseño deficiente o sin usar 
+    lo enseñado en el curso.
+    
+    Haga la documentación de su programa en inglés (no es necesario). 
+    La documentación de casi cualquier programa \textit{open-source} se encuentra en este 
+    idioma. 
+    Considere esta oportunidad para practicar su inglés.
+    
+    Se les pide encarecidamente que las consultas referentes a la tarea las hagan por 
+    el \textbf{foro de U-Cursos}. 
+    En caso de no obtener respuesta en un tiempo razonable, pueden hacerle llegar 
+    un correo al auxiliar o ayudantes.
+
+    Por último, el orden en el que escriben su programa es importante, se le sugiere que 
+    para cada funcionalidad que quiera implementar:
+    \begin{enumerate}
+      \item Cree los \textit{tests} necesarios para verificar la funcionalidad deseada, de
+        esta manera el enfoque está en como debería funcionar ésta, y no en cómo debería
+        implementarse.
+        Esto es muy útil para pensar bien en cuál es el problema que se está buscando 
+        resolver y se tengan presentes cuales serían las condiciones de borde que podrían 
+        generar problemas para su implementación.
+      %
+      \item Escriba la firma y la documentación del método a implementar, de esta forma se
+        tiene una definición de lo que hará su método incluso antes de implementarlo y se 
+        asegura de que su programa esté bien documentado.
+        Además, esto hace más entendible el código no solo para alguna persona que revise 
+        su programa, sino que también para el mismo programador\footnotemark.
+      %
+      \item Por último implemente la funcionalidad pensando en que debe pasar los tests que
+        escribió anteriormente y piense si estos tests son suficientes para cubrir todos 
+        los escenarios posibles para su aplicación, vuelva a los pasos 1 y 2 si es 
+        necesario.
+    \end{enumerate}
+    \footnotetext{
+      Entender un programa mal documentado que haya escrito uno mismo después de varios 
+      días de no trabajar en él puede resultar bastante complicado.
+    }
+  %
+%
